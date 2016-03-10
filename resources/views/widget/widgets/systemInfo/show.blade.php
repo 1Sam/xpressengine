@@ -11,6 +11,8 @@
             <li>Document Root : {{ $viewData['documentRoot'] }}</li>
             <li>Maintenance : {{ ($viewData['maintenanceMode'])?"On":"Off" }}</li>
             <li>TimeZone : {{ $viewData['timeZone'] }}</li>
+            <li>Laravel version : <?php $laravel = app(); echo $laravel::VERSION; ?></li>
+            
         </ul>
     </div>
 </div>
